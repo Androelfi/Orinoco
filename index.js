@@ -10,7 +10,7 @@ fetch("http://localhost:3000/api/cameras")
     let myParent = document.getElementById("proposition_modeles");
     myCameras.forEach(function(item){
         let myArticle = document.createElement("article");
-        myArticle.innerHTML = '<img src='+item.imageUrl+'> <h3>'+item.name+'</h3> <p>'+item.description+'</p> <p>Lentilles personalisables</p> <button><a href=">Personnalisez votre produit</a></button>';
+        myArticle.innerHTML = '<img src='+item.imageUrl+'> <h3>'+item.name+'</h3> <p>'+item.description+'</p> <p>Lentilles personalisables</p> <button><a href="">Personnalisez votre produit</a></button>';
         myParent.append(myArticle);
     })
 }))
