@@ -1,0 +1,38 @@
+#blocktitle
+{
+    justify-content: center;
+    margin: 40px 0;
+}
+a h1
+{
+    color: black;
+    margin-top: 30px;
+    font-size: 3em;
+}
+h2
+{
+    text-align: center;
+}
+#logotitle
+{
+    width: 118px;
+    height: 118px;
+}
+#proposition_modeles
+{
+    padding-bottom: 6%;
+}
+article
+{
+    padding-bottom: 50px;
+}
+img, h3, p, button
+{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+button
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
