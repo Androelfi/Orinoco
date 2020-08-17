@@ -1,8 +1,5 @@
-//Fonctions
-
 //Afficher produit selectionné + détails
 //Personnaliser lentille - menu déroulant (pas d'envoi serveur ni réponse)
-//Ajouter "selection du nombre d'articles"
 //Ajouter au panier + btn
 //Envoyer vers page panier
 
@@ -15,10 +12,10 @@ fetch("http://localhost:3000/api/cameras")
     json.forEach(function(element){
         myCameras.push(new Camera(element.imageUrl, element.name, element.description, element.lenses, element.price, element._id))
     })
-    let myParent = document.getElementById("proposition_modeles");
+    let myParent = document.getElementById("detail_produit");
     myCameras.forEach(function(item){
         let myArticle = document.createElement("article");
-        myArticle.append('<img src="'+item.imageUrl+'" class="img-thumbnail"> <h3>'+item.name+'</h3> <p>'+item.description+'</p> <p>'+item.lenses+'</p> <p>'+item.id+'</p>')
+        myArticle.innerHTML = '<img src='+item.imageUrl+'> <h3>'+item.name+'</h3> <p>'+item.description+'</p> <p>Prix : '+item.price+' €</p>';
         myParent.append(myArticle);
         })
 }))

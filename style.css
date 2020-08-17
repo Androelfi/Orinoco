@@ -36,3 +36,12 @@ button
     padding-left: 10px;
     padding-right: 10px;
 }
+ul
+{
+    justify-content: center;
+}
+li
+{
+    list-style-type: none;
+    padding : 2%;
+}
