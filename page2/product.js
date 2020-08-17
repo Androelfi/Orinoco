@@ -1,7 +1,5 @@
 //Afficher produit selectionné + détails
 //Personnaliser lentille - menu déroulant (pas d'envoi serveur ni réponse)
-//Ajouter au panier + btn
-//Envoyer vers page panier
 
 myCameras = [];
 
@@ -15,14 +13,11 @@ fetch("http://localhost:3000/api/cameras")
     let myParent = document.getElementById("detail_produit");
     myCameras.forEach(function(item){
         let myArticle = document.createElement("article");
-        myArticle.innerHTML = '<img src='+item.imageUrl+'> <h3>'+item.name+'</h3> <p>'+item.description+'</p> <p>Prix : '+item.price+' €</p>';
+        myArticle.innerHTML = '<img src='+item.imageUrl+'> <h3>'+item.name+'</h3> <p>'+item.description+'</p> <p>Prix : '+item.price+' €</p> <button><a onclick=document.location.assign("D:/Orinoco/page3/cart.html?'+item._id+'")>Ajouter au panier</a></button>';
         myParent.append(myArticle);
         })
 }))
 
-
-//Configurer le bouton d'activation 
-//Envoyer vers la page suivante pour afficher 1 seul produit détaillé
 
 const Camera = class{
     constructor(imageUrl, name, description, lenses, price, _id){

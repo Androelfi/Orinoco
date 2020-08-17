@@ -13,27 +13,24 @@ h2
 {
     text-align: center;
 }
-a h3
-{
-    color: black;
-    font-size: 1.5em;
-    text-align: center;
-    width: 360px;
-}
 #logotitle
 {
     width: 118px;
     height: 118px;
 }
-.img-thumbnail
-{
-    width: 360px;
-    height: 232px;
-    margin: 5%;
-}
-#proposition_modeles
+#detail_produit
 {
     padding-bottom: 6%;
+}
+img, h3, p, button
+{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+button
+{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 ul
 {
