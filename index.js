@@ -10,7 +10,7 @@ fetch("http://localhost:3000/api/cameras")
     let myParent = document.getElementById("proposition_modeles");
     myCameras.forEach(function(item){
         let myArticle = document.createElement("article");
-        myArticle.innerHTML = '<img src='+item.imageUrl+'> <h3>'+item.name+'</h3> <p>'+item.description+'</p> <p>Prix : '+item.price+' €</p> <button><a onclick=document.location.assign("D:/Orinoco/page2/product.html?'+item._id+'")>Personnalisez votre lentille</a></button>';
+        myArticle.innerHTML = '<img src='+item.imageUrl+'> <h3>'+item.name+'</h3> <p>'+item.description+'</p> <p>Prix : '+item.price+' €</p> <button><a onclick=document.location.assign("D:/Orinoco/page2/product.html?id='+item._id+'")>Personnalisez votre lentille</a></button>';
         myParent.append(myArticle);
     })
 }))
@@ -25,5 +25,3 @@ const Camera = class{
     this._id=_id
     }
 }
-
-//Envoyer vers la page suivante pour afficher 1 seul produit détaillé
