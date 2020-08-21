@@ -21,7 +21,7 @@ const Camera = class{
     this.name=name,
     this.description=description,
     this.lenses=lenses,
-    this.price=price,
+    this.price=price/100,
     this._id=_id
     }
 }
